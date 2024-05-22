@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	</head>
+	<body>
+		<section class="oe_container lead mt64">
+			<div>
+				<div class="col-md-12 mt16" style="padding:0;">
+					<div class="col-md-12" style="padding:0;">
+						<div class="panel-group mb0 mt0" role="tablist" id="Supportedversions" style="padding:0;">
+							<div class="panel-heading mb0 mt0 collapsed" role="tab" data-toggle="collapse" data-parent="#Supportedversions" data-target="#priceAccordeon_area" aria-expanded="false" style="margin-left:0;padding:0 0 2px 0;text-align:right;">
+								<strong>
+									<div style="background-color:#875A7B;color:white;padding:5px;margin-bottom:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+										<strong style="color:white;">
+											支持 :
+										</strong>
+									</div>
+									<div style="background-color:#875A7B;color:white;padding:5px;margin-bottom:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+										<strong style="color:white;" title="The tool is compatible with the Odoo Enterprise version">
+											<i class="fa fa-check" style="margin-left:4px;"> </i>
+											企业版
+										</strong>
+									</div>
+									<div style="background-color:#875A7B;padding:5px;margin-top:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+										<strong style="color:white;" title="The tool is compatible with the Odoo Community version">
+											<i class="fa fa-check" style="margin-left:4px;"> </i>
+											社区版
+										</strong>
+									</div>
+								</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead bi_title_box">
+			<div >
+				<div >
+					<h2 class="oe_slogan bi_title" style="color:#5082c4;">
+						<b> odoo 审批流程模块，图形化流程配置，接入企业微信发送消息通知</b>
+					</h2>
+					<p class="oe_slogan">
+						由于odoo官方在12版本以后弃用了web_diagram模块，视图类型也就缺少了diagram类型；原生的审批模块又不够可视化，
+						所以就产生了开发一套可以图形化配置审批流，实现企业数字化审批，并且对接企业微信，将审批消息通知到个人，
+						提醒及时审批以及审批过程中的信息通知，模块实现会签，或签，转签，转阅等基本功能。
+						下面简单介绍下模块的使用
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 1.初始化审批流，定义需要审批的模型，以及审批中的一些额外配置 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715755727046.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;"> 字段解释： </p>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   1. 审批完成前不显示其他功能按钮：审批完成前不允许用户看到表单的其他按钮，一切后续操作需要等待单据审批完成才能执行 </p>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   2. A处，可编辑表单：审批中或审批完成后可编辑的字段，如果不配置，表单不允许编辑</p>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   3. B处，设置条件：可设置字段条件，满足条件的表单进入审批流程，如果不配置，默认所有表单都会进入审批流程</p>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   4. C处，抄送相关配置：可配置表单审批完成后将单据抄送给其他用户，通知模板可配置，优先使用此处模板，如果不配置，将采用固定语言</p>
+					<br/>
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 2. 绘制流程 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715756107096.png">
+					<p class="oe_slogan" style="color: #090909;font-size: 20px;font-style: italic;font-weight:bolder;"> 默认创建【开始、结束】节点 </p>
+					<br/>
+					<p class="oe_slogan" style="color: #090909;font-size: 20px;font-style: italic;font-weight:bolder;"> 点击【添加节点】 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715756294364.png">
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   1. 审批模式：会签，节点所有审批人审批完成才跳转到下一节点；或签，主要有一个人审批完成就可以跳转到下一节点 </p>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">   2. 允许转签：允许当前审批人转签给其他用户审批</p>
+					<br/>
+					<p class="oe_slogan" style="color: #090909;font-size: 10px;font-style: italic;font-weight:bolder;">  添加条件，生成不同的审批路径</p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715756891917.png">
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715757019220.png">
+
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 3.首次发布 </p>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 配置完成之后 ，点击【首次发布】，发布成功之后，再次点击【绘制流程】进入到图形界面时 </p>
+					<br/>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 是不允许添加节点，删除节点，必须点击【更新流程】后才能修改审批流程 </p>
+					<br/>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 并且修改后的审批流不影响系统已经提交审批的单据 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715757290849.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 4.下面我们提交一个休假进行审批 </p>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 新建休假单据，只显示【提交审批】按钮 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715757522076.png">
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 提交审批，显示审批流程节点详细信息在表单的下面，可取消审批，暂停审批，恢复审批 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715758326444.png">
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 关联企业微信消息通知 </p>
+					<br/>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715758545849.png">
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 审批，这里模拟都是审批通过，用户【经理1】登录系统，进入审批模块，点击待审批菜单 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715758739345.png">
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715758774390.png">
+					<br/>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 可转签给其他人，点击审批，同意，抄送消息通知 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715758975329.png">
+
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 20px;font-style: italic;font-weight:bolder;"> 审批完成后，显示表单其他按钮 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715759065741.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 5. 其他一些看板：我的提交，转阅，转签，抄送 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715759258039.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 6.设置模块的消息通知 </p>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 默认只使用odoo内部进行消息通知，如果需要配置企微消息，进行如下配置 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715759388436.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="oe_container lead">
+			<div>
+				<div>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 7. 拉取企微用户，并和odoo用户表做关联 </p>
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715759492449.png">
+					<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1715759566626.png">
+					<br/>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 审批驳回不在这演示 </p>
+					<p class="oe_slogan" style="color: #1e32b1;font-size: 35px;font-style: italic;font-weight:bolder;"> 模块可根据具体需求进行拓展开发 </p>
+				</div>
+			</div>
+		</section>
+	</body>
+
+
+</html>
