@@ -60,6 +60,7 @@
     ],
     'demo': [],
     'installable': True,
+
     'active': True,
     'auto_install': False,
 }
