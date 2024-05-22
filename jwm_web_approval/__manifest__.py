@@ -61,7 +61,5 @@
     'demo': [],
     'installable': True,
     'active': True,
-    'price': 510,
-    'currency': 'EUR',
     'auto_install': False,
 }
